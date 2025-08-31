@@ -9,15 +9,8 @@ Graph Contrastive Learning (GCL) has demonstrated superior performance in self-s
 ## Training LMAMoE
 Taking the dataset pubmed as an example, run the following command to obtain the experimental results:
     
-    python trainmodelaug.py   --dataset  Photo    
+    python trainmodelaug.py   --dataset  pubmed 
 
-##  Baselines
-
-Traditional methods. We employ 3 traditional methods including  Node2vec, DeepWalk, and LINE. These methods belong to shallow models as they did not utilize the idea of deep learning. 
-
-Data augmentation. We apply 6 data augmentation works including DGI, GraphCL,  COLES, GGD , GRACE  and MVGRL. As a key part of the contrastive field, these methods tend to employ various ad-hoc strategies to generate augmented graphs for shared-weighted contrastive frameworks. 
-
-Model augmentation. We apply 3 model augmentation methods including SUGRL, BGRL, and MAGCL. 
 ## Codes and datasets
 The implementation of this code is largely built upon [MVGRL](https://github.com/kavehhassani/mvgrl) 
 
